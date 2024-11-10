@@ -20,6 +20,7 @@ function getRandomQuote() {
 
 // Event listener for button click
 document.getElementById("quoteButton").addEventListener("click", function () {
-  // Show a random quote in an alert box
-  alert(getRandomQuote());
+// get random quote
+const randomQuote = getRandomQuote();
+document.getElementById("quoteDisplay").textContent = randomQuote;
 });
